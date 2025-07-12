@@ -32,9 +32,18 @@ This CLI-based tool is designed for penetration testers, cybersecurity students,
 - Kali Linux or any Debian-based OS
 - Internet connection (for scanning remote URLs)
 
+### File Structure
+
+beacon-/
+├── beacon.py             # ✅ Main scanner script (run this file)
+├── requirements.txt      # 📦 Lists Python packages used (currently: requests)
+├── LICENSE               # 📜 MIT License file
+├── README.md             # 📘 Documentation file (this file)
+└── screenshots/          # 🖼️ (Optional) Folder for demo images/screenshots
+
 ### Install Python dependencies:
 
 ```bash
 pip install -r requirements.txt
 
-
+### File Structure
