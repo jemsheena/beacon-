@@ -1,26 +1,40 @@
-# 🛡️ Beacon: OWASP Vulnerability Scanner
+# 🛡️ Beacon: OWASP Security Misconfiguration Scanner
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux%20%7C%20Linux-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/project-active-brightgreen)
 
-**Beacon** is a Python-based vulnerability scanner designed to detect misconfigurations and insecure designs in web applications. It focuses on OWASP Top 10 vulnerabilities.
+**Beacon** is a Python-based vulnerability scanner that detects **OWASP Top 10** vulnerabilities — especially **A05: Security Misconfiguration** and **A04: Insecure Design** — in web applications.
 
-Built for Kali Linux and penetration testers, Beacon is a powerful tool for security auditing, CTFs, ethical hacking, and cybersecurity research.
+This CLI-based tool is designed for penetration testers, cybersecurity students, CTF participants, and ethical hackers. Built for **Kali Linux**, it requires no GUI and is fully open-source.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 Detects missing security headers
-- 🔄 Checks for unsafe HTTP methods (PUT, DELETE, TRACE)
-- 📂 Detects open directory listings
-- 🚪 Finds exposed admin panels
-- 🌍 Detects CORS misconfigurations
-- ⚠️ Flags verbose error leaks (stack traces, tech info)
-- 🔧 Identifies insecure design flaws in site behavior
-- 🧭 Interactive CLI menu (for OWASP Top 10)
-- 📊 Easy-to-read terminal output
+- ✅ Detects missing HTTP security headers
+- ✅ Scans unsafe HTTP methods (PUT, DELETE, etc.)
+- ✅ Checks open directories (`/uploads/`, `/images/`)
+- ✅ Detects open admin panels (`/admin`, `/phpmyadmin`)
+- ✅ Identifies CORS misconfigurations
+- ✅ Catches verbose error messages & tech stack leaks
+- ✅ Interactive CLI interface (OWASP-based)
+- ✅ Works on Kali & other Linux distributions
 
 ---
+
+## 📥 Installation
+
+### Requirements
+
+- Python 3.8+
+- Kali Linux or any Debian-based OS
+- Internet connection (for scanning remote URLs)
+
+### Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
 
 
